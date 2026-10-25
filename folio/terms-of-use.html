@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="A straightforward guide to using Folio, keeping ownership of your work, and understanding your rights.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <title>Terms of Use — Folio</title>
+  <style>
+:root { color-scheme: light dark; --bg:#faf8f4; --panel:#fffdfa; --ink:#302c27;
+  --muted:#6f655b; --accent:#874728; --line:#ddd5c9; --soft:#f0eae1; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181715; --panel:#211f1c; --ink:#eee8df; --muted:#bdb2a4;
+    --accent:#e0ae8c; --line:#494138; --soft:#2c2722; }
+}
+* { box-sizing:border-box; }
+html { scroll-padding-top:2rem; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:3px; }
+.skip { position:absolute; left:1rem; top:-6rem; background:var(--panel); padding:.6rem 1rem; z-index:2; }
+.skip:focus { top:1rem; }
+.wrap { max-width:1160px; margin:auto; padding:0 44px; }
+header { border-bottom:1px solid var(--line); }
+.bar { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:92px; }
+.brand { color:var(--ink); text-decoration:none; font:600 31px/1.2 Georgia,"Times New Roman",serif; letter-spacing:-1px; }
+.brand span { color:var(--accent); margin-right:9px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 22px; font-size:14px; }
+nav a { color:var(--muted); text-decoration:none; }
+nav a[aria-current="page"] { color:var(--accent); text-decoration:underline; }
+.hero { padding:68px 0 39px; }
+.eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; font-weight:500; line-height:1.2; }
+h1 { margin:15px 0 19px; font-size:clamp(39px,6vw,62px); letter-spacing:-.035em; }
+.intro { max-width:740px; margin:0 0 21px; font-size:19px; color:var(--muted); line-height:1.7; }
+.date { font-size:13px; color:var(--muted); }
+.layout { display:grid; grid-template-columns:215px minmax(0,1fr); gap:58px; padding:12px 0 64px; align-items:start; }
+aside { position:sticky; top:26px; font-size:13px; }
+aside h2 { font:600 12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  text-transform:uppercase; letter-spacing:.1em; margin:0 0 15px; color:var(--muted); }
+aside ol { margin:0; padding-left:19px; }
+aside li { margin:0 0 10px; padding-left:3px; }
+aside a { color:var(--muted); text-decoration:none; }
+article { max-width:76ch; min-width:0; }
+.callout { background:var(--soft); border-left:3px solid var(--accent); padding:19px 23px; margin:0 0 34px; border-radius:0 10px 10px 0; }
+.callout p { margin:0; }
+section { margin-bottom:33px; }
+section h2 { font-size:27px; letter-spacing:-.02em; padding-top:9px; margin:0 0 15px; }
+p { margin:0 0 15px; }
+ul { padding-left:23px; }
+li { padding-left:3px; margin:7px 0; }
+strong { font-weight:650; }
+.cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; padding:2px 0 34px; }
+.card { border:1px solid var(--line); border-radius:16px; background:var(--panel); padding:29px; text-decoration:none; color:var(--ink); }
+.card:hover { border-color:var(--accent); }
+.card h2 { margin:16px 0 13px; font-size:30px; }
+.card p { color:var(--muted); margin-bottom:22px; }
+.card .link { color:var(--accent); font-size:14px; font-weight:600; }
+.contact { padding:20px 0 58px; color:var(--muted); max-width:760px; }
+footer { border-top:1px solid var(--line); padding:23px 0 31px; font-size:13px; color:var(--muted); }
+.footer-row { display:flex; justify-content:space-between; gap:12px 28px; flex-wrap:wrap; }
+@media (max-width:800px) {
+  .wrap { padding:0 25px; } .hero { padding:43px 0 28px; }
+  .layout { grid-template-columns:1fr; gap:28px; }
+  aside { position:static; border-bottom:1px solid var(--line); padding-bottom:20px; }
+  aside ol { columns:2; column-gap:28px; } aside li { break-inside:avoid; }
+  .bar { align-items:flex-start; flex-direction:column; gap:17px; padding:23px 0; }
+}
+@media (max-width:480px) {
+  .wrap { padding:0 20px; } body { font-size:16px; }
+  .cards { grid-template-columns:1fr; } .card { padding:23px; }
+  aside ol { columns:1; } nav { gap:9px 17px; }
+}
+@media print {
+  :root { color-scheme:light; --bg:white; --panel:white; --ink:#111; --muted:#444; --accent:#333; --line:#ccc; --soft:#f5f5f5; }
+  body { font-size:11pt; } header,aside,.skip,.contact { display:none; }
+  .wrap { max-width:none; padding:0; } .hero { padding:0 0 20px; }
+  .layout { display:block; padding:0; } article { max-width:none; }
+  h1 { font-size:31pt; } section h2 { font-size:17pt; break-after:avoid; }
+  .callout { break-inside:avoid; } .cards { display:block; } .card { display:block; margin-bottom:16px; }
+  a { color:inherit; } footer { margin-top:25px; } .footer-row { display:block; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap bar"><a class="brand" href="index.html" aria-label="Folio legal overview"><span aria-hidden="true">▤</span>Folio</a><nav aria-label="Legal documents"><a href="index.html">Overview</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-use.html" aria-current="page">Terms of Use</a></nav></div></header>
+<main id="main" class="wrap">
+  <div class="hero"><div class="eyebrow">Folio · Your words, on your Mac</div><h1>Terms of Use</h1><p class="intro">A straightforward guide to using Folio, keeping ownership of your work, and understanding your rights.</p><div class="date">Last updated <time datetime="2026-10-25">October 25, 2026</time> · English · Current macOS app</div></div>
+  <div class="layout"><aside aria-label="On this page"><h2>On this page</h2><ol><li><a href="#scope">Scope and acceptance</a></li><li><a href="#license">Using the application</a></li><li><a href="#content">Your documents and responsibility</a></li><li><a href="#features">Compatibility, rendering, and exports</a></li><li><a href="#purchases">Purchases and updates</a></li><li><a href="#third-party">Third-party components</a></li><li><a href="#privacy">Privacy and voluntary feedback</a></li><li><a href="#warranties">Warranties and liability</a></li><li><a href="#ending">Ending use and applicable law</a></li><li><a href="#contact">Questions and contact</a></li></ol></aside><article><div class="callout"><p><strong>Your writing remains yours.</strong> These terms do not transfer your documents to the publisher or remove mandatory consumer rights.</p></div><section id="scope" aria-labelledby="scope-title"><h2 id="scope-title">1. Scope and acceptance</h2>
+<p>These Terms of Use cover the Folio macOS application. “You” means the person using the app; “publisher” means the rights holder distributing your licensed copy. By using Folio, you agree to these terms to the extent they apply under local law. If you do not agree, stop using and remove the app.</p>
+<p>You must have the legal capacity to accept these terms, or use the app with any permission required from a parent, guardian, or organization. These terms do not identify Folio as a separate legal entity.</p></section><section id="license" aria-labelledby="license-title"><h2 id="license-title">2. Using the application</h2>
+<p>Subject to these terms and any applicable distribution license, you may install and use a lawfully obtained copy of Folio on compatible Macs that you own or control, for personal or business writing. This permission does not transfer ownership of Folio’s code, design, or branding.</p>
+<p>Do not distribute counterfeit copies, remove legally required notices, infringe others’ rights, or use the app unlawfully. Restrictions do not remove rights granted by applicable law or a third-party open-source license, including rights concerning interoperability or permitted reverse engineering.</p>
+<p>Additional store usage rules or a license supplied with your copy may apply. These terms do not override mandatory law or rights granted by an applicable open-source license.</p></section><section id="content" aria-labelledby="content-title"><h2 id="content-title">3. Your documents and responsibility</h2>
+<p>You keep ownership of your documents and exported work. Using Folio does not grant the publisher ownership of your writing or permission to publish it. Normal editing and previewing process your files locally.</p>
+<p>You are responsible for having permission to use the content you open, edit, or share. Folio is a local editor, not a hosted publishing or content-moderation service. The publisher does not review or remotely remove your local documents.</p>
+<p>Save your work and maintain independent backups. Autosave, undo, and recent-file history are useful editing features, but they are not a substitute for a backup strategy.</p></section><section id="features" aria-labelledby="features-title"><h2 id="features-title">4. Compatibility, rendering, and exports</h2>
+<p>The current app requires macOS 14 or later. Supported Markdown syntax, file formats, search limits, and rendering behavior depend on the installed version. The app does not promise compatibility with every Markdown dialect, diagram, font, or third-party editor.</p>
+<p>Review important documents and exported HTML or PDF before distributing them. External links and synchronized folders are handled by other applications or providers. You decide whether to use those services and remain subject to their terms.</p></section><section id="purchases" aria-labelledby="purchases-title"><h2 id="purchases-title">5. Purchases and updates</h2>
+<p>The current app contains no in-app subscription or account billing system. Any purchase price, distribution license, or refund process must be disclosed by the channel supplying your copy. These terms do not create a recurring charge or restrict statutory refund rights.</p>
+<p>Updates may change features or system requirements. No particular future feature, support period, or update schedule is promised here. A revised version of these terms should state its revision date; this offline copy does not change automatically.</p></section><section id="third-party" aria-labelledby="third-party-title"><h2 id="third-party-title">6. Third-party components</h2>
+<p>Folio includes open-source components such as marked, KaTeX, Mermaid, and DOMPurify. Their license and copyright notices are included in the app’s resources. Those licenses continue to govern the corresponding components and take precedence over conflicting restrictions in these terms.</p>
+<p>Third-party names and marks belong to their respective rights holders. Inclusion of a component does not imply endorsement of Folio.</p></section><section id="privacy" aria-labelledby="privacy-title"><h2 id="privacy-title">7. Privacy and voluntary feedback</h2>
+<p>The <a href="privacy-policy.html">Privacy Policy</a> explains local file processing, preferences, external services, and optional support correspondence. Folio does not require an account or upload documents as part of ordinary editing.</p>
+<p>You may send feedback to <a href="mailto:yfeiib@gmail.com">yfeiib@gmail.com</a>. Please send only material you have permission to share and remove confidential information. Sending feedback does not transfer ownership of your documents. Suggestions may be considered to improve the app without a promise of implementation or compensation.</p></section><section id="warranties" aria-labelledby="warranties-title"><h2 id="warranties-title">8. Warranties and liability</h2>
+<p>To the extent permitted by applicable law, Folio is provided “as is” and “as available,” without a promise that it will be error-free, uninterrupted, fit for every purpose, or immune from data loss. You should verify output and keep backups.</p>
+<p>To the extent permitted by applicable law, the publisher is not liable for indirect or consequential loss arising from use of the app. This limitation does not exclude liability for fraud, intentional misconduct, gross negligence where it cannot be excluded, death or personal injury where the law prohibits exclusion, or any other non-excludable liability.</p>
+<p><strong>Your mandatory consumer rights remain intact.</strong> Applicable warranties, remedies, refunds, and other protections continue to apply even if a sentence in these terms would otherwise limit them.</p></section><section id="ending" aria-labelledby="ending-title"><h2 id="ending-title">9. Ending use and applicable law</h2>
+<p>You may stop using and uninstall Folio at any time. Uninstalling the application does not delete your documents, backups, or all macOS preferences and history. A right to use the app may end following a material breach where applicable law permits, but these terms do not grant the publisher remote control over your files.</p>
+<p>Applicable law determines your legal rights and the courts or authorities available to resolve a dispute. These terms do not impose a mandatory arbitration agreement, class-action waiver, or exclusive foreign forum, and do not take away mandatory protections in your country of residence.</p></section><section id="contact" aria-labelledby="contact-title"><h2 id="contact-title">10. Questions and contact</h2>
+<p>For feedback, questions about these terms, or privacy requests, email <a href="mailto:yfeiib@gmail.com">yfeiib@gmail.com</a>. Your email application sends the message only when you choose to do so.</p></section></article></div>
+</main>
+<footer><div class="wrap footer-row"><span>Folio · Markdown, thoughtfully local.</span><span>Feedback &amp; privacy: <a href="mailto:yfeiib@gmail.com">yfeiib@gmail.com</a></span></div></footer>
+</body>
+</html>

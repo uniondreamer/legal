@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Clear information about your privacy, your writing, and using Folio.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <title>Privacy &amp; terms — Folio</title>
+  <style>
+:root { color-scheme: light dark; --bg:#faf8f4; --panel:#fffdfa; --ink:#302c27;
+  --muted:#6f655b; --accent:#874728; --line:#ddd5c9; --soft:#f0eae1; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181715; --panel:#211f1c; --ink:#eee8df; --muted:#bdb2a4;
+    --accent:#e0ae8c; --line:#494138; --soft:#2c2722; }
+}
+* { box-sizing:border-box; }
+html { scroll-padding-top:2rem; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+a { color:var(--accent); text-underline-offset:.2em; overflow-wrap:anywhere; }
+a:hover { text-decoration-thickness:2px; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; border-radius:3px; }
+.skip { position:absolute; left:1rem; top:-6rem; background:var(--panel); padding:.6rem 1rem; z-index:2; }
+.skip:focus { top:1rem; }
+.wrap { max-width:1160px; margin:auto; padding:0 44px; }
+header { border-bottom:1px solid var(--line); }
+.bar { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:92px; }
+.brand { color:var(--ink); text-decoration:none; font:600 31px/1.2 Georgia,"Times New Roman",serif; letter-spacing:-1px; }
+.brand span { color:var(--accent); margin-right:9px; }
+nav { display:flex; flex-wrap:wrap; gap:8px 22px; font-size:14px; }
+nav a { color:var(--muted); text-decoration:none; }
+nav a[aria-current="page"] { color:var(--accent); text-decoration:underline; }
+.hero { padding:68px 0 39px; }
+.eyebrow { color:var(--accent); font-size:12px; font-weight:700; letter-spacing:.15em; text-transform:uppercase; }
+h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; font-weight:500; line-height:1.2; }
+h1 { margin:15px 0 19px; font-size:clamp(39px,6vw,62px); letter-spacing:-.035em; }
+.intro { max-width:740px; margin:0 0 21px; font-size:19px; color:var(--muted); line-height:1.7; }
+.date { font-size:13px; color:var(--muted); }
+.layout { display:grid; grid-template-columns:215px minmax(0,1fr); gap:58px; padding:12px 0 64px; align-items:start; }
+aside { position:sticky; top:26px; font-size:13px; }
+aside h2 { font:600 12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  text-transform:uppercase; letter-spacing:.1em; margin:0 0 15px; color:var(--muted); }
+aside ol { margin:0; padding-left:19px; }
+aside li { margin:0 0 10px; padding-left:3px; }
+aside a { color:var(--muted); text-decoration:none; }
+article { max-width:76ch; min-width:0; }
+.callout { background:var(--soft); border-left:3px solid var(--accent); padding:19px 23px; margin:0 0 34px; border-radius:0 10px 10px 0; }
+.callout p { margin:0; }
+section { margin-bottom:33px; }
+section h2 { font-size:27px; letter-spacing:-.02em; padding-top:9px; margin:0 0 15px; }
+p { margin:0 0 15px; }
+ul { padding-left:23px; }
+li { padding-left:3px; margin:7px 0; }
+strong { font-weight:650; }
+.cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; padding:2px 0 34px; }
+.card { border:1px solid var(--line); border-radius:16px; background:var(--panel); padding:29px; text-decoration:none; color:var(--ink); }
+.card:hover { border-color:var(--accent); }
+.card h2 { margin:16px 0 13px; font-size:30px; }
+.card p { color:var(--muted); margin-bottom:22px; }
+.card .link { color:var(--accent); font-size:14px; font-weight:600; }
+.contact { padding:20px 0 58px; color:var(--muted); max-width:760px; }
+footer { border-top:1px solid var(--line); padding:23px 0 31px; font-size:13px; color:var(--muted); }
+.footer-row { display:flex; justify-content:space-between; gap:12px 28px; flex-wrap:wrap; }
+@media (max-width:800px) {
+  .wrap { padding:0 25px; } .hero { padding:43px 0 28px; }
+  .layout { grid-template-columns:1fr; gap:28px; }
+  aside { position:static; border-bottom:1px solid var(--line); padding-bottom:20px; }
+  aside ol { columns:2; column-gap:28px; } aside li { break-inside:avoid; }
+  .bar { align-items:flex-start; flex-direction:column; gap:17px; padding:23px 0; }
+}
+@media (max-width:480px) {
+  .wrap { padding:0 20px; } body { font-size:16px; }
+  .cards { grid-template-columns:1fr; } .card { padding:23px; }
+  aside ol { columns:1; } nav { gap:9px 17px; }
+}
+@media print {
+  :root { color-scheme:light; --bg:white; --panel:white; --ink:#111; --muted:#444; --accent:#333; --line:#ccc; --soft:#f5f5f5; }
+  body { font-size:11pt; } header,aside,.skip,.contact { display:none; }
+  .wrap { max-width:none; padding:0; } .hero { padding:0 0 20px; }
+  .layout { display:block; padding:0; } article { max-width:none; }
+  h1 { font-size:31pt; } section h2 { font-size:17pt; break-after:avoid; }
+  .callout { break-inside:avoid; } .cards { display:block; } .card { display:block; margin-bottom:16px; }
+  a { color:inherit; } footer { margin-top:25px; } .footer-row { display:block; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap bar"><a class="brand" href="index.html" aria-label="Folio legal overview"><span aria-hidden="true">▤</span>Folio</a><nav aria-label="Legal documents"><a href="index.html" aria-current="page">Overview</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-use.html">Terms of Use</a></nav></div></header>
+<main id="main" class="wrap">
+  <div class="hero"><div class="eyebrow">Folio · Your words, on your Mac</div><h1>Privacy &amp; terms</h1><p class="intro">Clear information about your privacy, your writing, and using Folio.</p><div class="date">Last updated <time datetime="2026-10-25">October 25, 2026</time> · English · Current macOS app</div></div>
+  
+<div class="cards">
+<a class="card" href="privacy-policy.html"><div class="eyebrow">01 · Privacy</div><h2>Privacy Policy</h2><p>How local documents, preferences, and optional support messages are handled.</p><span class="link">Read the privacy policy →</span></a>
+<a class="card" href="terms-of-use.html"><div class="eyebrow">02 · Terms</div><h2>Terms of Use</h2><p>Using Folio, ownership of your writing, third-party licenses, and your rights.</p><span class="link">Read the terms of use →</span></a>
+</div>
+<div class="callout"><p><strong>Made to read offline.</strong> These pages contain no scripts, tracking, remote fonts, or online forms. They follow your device’s light or dark appearance. Use your browser’s Print command to save a PDF.</p></div>
+<div class="contact"><p>Questions, feedback, or privacy requests? Contact <a href="mailto:yfeiib@gmail.com">yfeiib@gmail.com</a>. The link opens your email app; sending a message is always your choice.</p><p>Normal use of Folio does not upload your writing. If you contact support, the information you send is handled as described in the Privacy Policy.</p></div>
+</main>
+<footer><div class="wrap footer-row"><span>Folio · Markdown, thoughtfully local.</span><span>Feedback &amp; privacy: <a href="mailto:yfeiib@gmail.com">yfeiib@gmail.com</a></span></div></footer>
+</body>
+</html>
