@@ -16,7 +16,7 @@ Only when requested, Apple's on-device model receives metadata for the current f
 
 ## Storage and removal
 
-Scans stay in memory until the app closes. Up to 100 cleanup records, including dates, cache names, sizes, and Trash paths, remain in ~/Library/Containers/com.uniondream.cleanspace/Data/Library/Application Support/Diskvero/history.json. Quit the app and delete that file to remove history. Reset preferences with: defaults delete ~/Library/Containers/com.uniondream.cleanspace/Data/Library/Preferences/com.uniondream.cleanspace. Uninstalling alone may leave this data. Trash contents are controlled by macOS. Language preferences and folder-access bookmarks stay in this app’s preferences until those preferences are reset.
+Scans stay in memory until the app closes. Up to 100 cleanup records, including dates, cache names, sizes, and Trash paths, remain in ~/Library/Containers/com.uniondream.cleanspace/Data/Library/Application Support/ClearSpace/history.json. Quit the app and delete that file to remove history. Reset preferences with: defaults delete ~/Library/Containers/com.uniondream.cleanspace/Data/Library/Preferences/com.uniondream.cleanspace. Uninstalling alone may leave this data. Trash contents are controlled by macOS. Language preferences and folder-access bookmarks stay in this app’s preferences until those preferences are reset.
 
 ## Voluntary feedback
 
